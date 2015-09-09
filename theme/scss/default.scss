@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-@mixin highlight-color($color: $brand-yellow) {
+@mixin highlight-color($color: $brand-grey) {
   -webkit-tap-highlight-color: $color;
   -moz-tap-highlight-color: $color;
   -ms-tap-highlight-color: $color;
@@ -21,7 +21,7 @@
  */
 ::selection {
   color: white;
-  background-color: $brand-yellow;
+  background-color: $brand-grey;
   @include text-shadow(none);
 }
 
@@ -138,7 +138,7 @@ slides > slide {
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+      background: image-url("wordpress-logo-32.png") no-repeat 0 50%;
       @include background-size($brand-small-icon-size $brand-small-icon-size);
       padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
@@ -335,7 +335,7 @@ ul {
 }
 
 pre {
-  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-family: Hack, 'Source Code Pro', 'Courier New', monospace;
   font-size: 20px;
   line-height: 28px;
   padding: 10px 0 10px $slide-left-right-padding;
@@ -367,7 +367,7 @@ pre[data-lang="go"] {
 
 code {
   font-size: 95%;
-  font-family: 'Source Code Pro', 'Courier New', monospace;
+  font-family: Hack, 'Source Code Pro', 'Courier New', monospace;
   color: black;
 }
 
@@ -419,13 +419,13 @@ button:not(:disabled):active {
   color: $brand-blue-secondary2;
 }
 .yellow {
-  color: $brand-yellow;
+  color: $brand-grey;
 }
 .yellow2 {
-  color: $brand-yellow-secondary;
+  color: $brand-grey-secondary;
 }
 .yellow3 {
-  color: $brand-yellow-secondary2;
+  color: $brand-grey-secondary2;
 }
 .green {
   color: $brand-green;
@@ -437,13 +437,13 @@ button:not(:disabled):active {
   color: $brand-green-secondary2;
 }
 .red {
-  color: $brand-red;
+  color: $brand-orange;
 }
 .red2 {
-  color: $brand-red-secondary;
+  color: $brand-orange-secondary;
 }
 .red3 {
-  color: $brand-red-secondary2;
+  color: $brand-orange-secondary2;
 }
 .gray {
   color: $gray-1;
@@ -498,7 +498,7 @@ table {
 
   td.highlight {
     color: $gray-4;
-    @include background(linear-gradient(top, $brand-yellow 40%, $brand-yellow-secondary2 80%) no-repeat);
+    @include background(linear-gradient(top, $brand-grey 40%, $brand-grey-secondary2 80%) no-repeat);
   }
 
   &.rows {
@@ -613,7 +613,7 @@ article.smaller {
 .prettyprint .atn, /* a markup attribute name */
 .prettyprint .dec,
 .prettyprint .var { /* a declaration; a variable name */
-  color: $brand-red-secondary2; //rgb(127, 0, 127);
+  color: $brand-orange-secondary2; //rgb(127, 0, 127);
 }
 .prettyprint .pln {
   color: $gray-4;

@@ -1,12 +1,12 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
-    subtitle: 'Subtitle Goes Here',
-    //eventInfo: {
-    //  title: 'Google I/O',
-    //  date: '6/x/2013'
-    //},
+    title: 'Scratching an Itch',
+    subtitle: 'Taking the First Step to Becoming a WordPress Contributor',
+    eventInfo: {
+      title: 'WordCamp DFW',
+      date: '9/12/2015'
+    },
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -17,17 +17,18 @@ var SLIDE_CONFIG = {
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
     ],
-    //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
+    theme: ['wcdfw2015'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title<br>Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    name: 'Morgan Estes',
+    title: 'Web Engineer',
+    company: '10up',
+    //gplus: 'http://plus.google.com/1234567890',
+    twitter: '@morganestes',
+    www: 'https://www.morganestes.com',
+    github: 'https://github.com/morganestes'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',

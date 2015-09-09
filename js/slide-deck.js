@@ -337,11 +337,12 @@ SlideDeck.prototype.loadConfig_ = function(config) {
     if (presenters.length == 1) {
       var p = presenters[0];
 
-      var presenterTitle = [p.name];
+      var presenterName = [p.name];
+      var presenterTitle = [p.title];
       if (p.company) {
         presenterTitle.push(p.company);
       }
-      html = presenterTitle.join(' - ') + '<br>';
+      html = presenterName + '<br>' + presenterTitle.join(', ') + '<br>';
 
       var gplus = p.gplus ? '<span>g+</span><a href="' + p.gplus +
           '">' + p.gplus.replace(/https?:\/\//, '') + '</a>' : '';
@@ -428,6 +429,12 @@ SlideDeck.prototype.addFonts_ = function(fonts) {
   el.href = ('https:' == document.location.protocol ? 'https' : 'http') +
       '://fonts.googleapis.com/css?family=' + fonts.join('|') + '&v2';
   document.querySelector('head').appendChild(el);
+
+  // Hack font
+  el = document.createElement( 'link' );
+  el.rel = 'stylesheet';
+  el.href = '//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css';
+  document.querySelector( 'head' ).appendChild( el );
 };
 
 /**
