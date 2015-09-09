@@ -308,8 +308,8 @@ SlideDeck.prototype.loadConfig_ = function(config) {
     this.loadAnalytics_();
   }
 
-  if (settings.fonts) {
-    this.addFonts_(settings.fonts);
+  if (settings.webFonts) {
+    this.addFonts_(settings.webFonts);
   }
 
   // Builds. Default to on.

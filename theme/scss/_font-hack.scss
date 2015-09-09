@@ -1,0 +1,33 @@
+/*!
+ *  Hack v2.010 by Chris Simpkins - https://sourcefoundry.org/hack/
+ *  Licenses - Fonts: Modified SIL OFL 1.1 + Bitstream Vera license, CSS: MIT License
+ */
+/* FONT PATHS
+ * -------------------------- */
+@font-face {
+  font-family: 'Hack';
+  src: font-url('hack-regular-latin-webfont.woff?v=2.013') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: font-url('hack-bold-latin-webfont.woff?v=2.013') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: font-url('hack-regularoblique-latin-webfont.woff?v=2.013') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: font-url('hack-boldoblique-latin-webfont.woff?v=2.013') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
