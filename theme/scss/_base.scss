@@ -12,8 +12,8 @@
 @import "compass/css3/transition";
 
 @import "variables";
-@import "font-open-sans";
-@import "font-hack";
+@import "fonts/open-sans";
+@import "fonts/hack-latin";
 
 @mixin font-smoothing($val: antialiased) {
   -webkit-font-smoothing: $val;
