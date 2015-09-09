@@ -6,7 +6,7 @@ threadsafe: yes
 
 handlers:
 - url: /
-  static_files: template.html
+  static_files: index.html
   upload: template\.html
 
 - url: /slide_config\.js
