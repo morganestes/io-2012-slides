@@ -1,11 +1,11 @@
 title: Contribute
-subtitle: verb | con·trib·ute 
+subtitle: verb | con·trib·ute
 
-    : to give (something, such as money, goods, or time) 
+    : to give (something, such as money, goods, or time)
         to help a person, group, cause, or organization
 
     : to help to cause something to happen
-      
+
     : to write (something, such as a story, poem, or essay) for a magazine
 
 <footer class="source">http://www.merriam-webster.com/dictionary/contribute</footer>
@@ -117,6 +117,7 @@ build_lists: true
 ---
 
 title: Personal Growth
+subtitle: Learn, Contribute, ???, Profit!
 class: segue dark nobackground
 
 ---
