@@ -34,6 +34,11 @@ build_lists: true
 ---
 
 title: Community Building
+class: segue dark
+
+---
+
+title: Community Building
 subtitle: It's a small world, after all
 class: image
 
@@ -43,7 +48,7 @@ class: image
 
 title: Ways to Contribute
 subtitle: Where there's a will, there's a way
-class: segue dark
+class: segue dark nobackground
 
 ---
 
@@ -103,10 +108,16 @@ subtitle: TV
 
 title: Captions Help With Translations
 class: big
+build_lists: true
 
 * Most videos are in english
 * More coming in other languages
 * Accents are hard, y’all
+
+---
+
+title: Personal Growth
+class: segue dark nobackground
 
 ---
 
