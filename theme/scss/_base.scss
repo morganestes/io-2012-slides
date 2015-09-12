@@ -14,6 +14,7 @@
 @import "variables";
 @import "fonts/open-sans";
 @import "fonts/hack-latin";
+@import "fonts/dashicons";
 
 @mixin font-smoothing($val: antialiased) {
   -webkit-font-smoothing: $val;

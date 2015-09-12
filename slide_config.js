@@ -12,11 +12,11 @@ var SLIDE_CONFIG = {
     enableSlideAreas: false, // Default: true. False turns off the click areas on either slide of the slides.
     enableTouch: false, // Default: true. If touch support should enabled. Note: the device must support touch.
     //analytics: 'UA-XXXXXXXX-1', // TODO: Using this breaks GA for some reason (probably requirejs). Update your tracking code in index.html instead.
-    favIcon: 'images/wpmini-blue.png',
-    webFonts: [
+    favIcon: '/images/wpmini-blue.png',
+    //webFonts: [
       //'Open Sans:regular,semibold,italic,italicsemibold',
       //'Source Code Pro'
-    ],
+    //],
     theme: ['wcdfw2015'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
   },
 
@@ -27,7 +27,7 @@ var SLIDE_CONFIG = {
     company: '10up',
     //gplus: 'http://plus.google.com/1234567890',
     twitter: '@morganestes',
-    www: 'https://www.morganestes.com',
+    www: 'https://morganestes.com',
     github: 'https://github.com/morganestes'
   }/*, {
     name: 'Second Name',

@@ -45,33 +45,188 @@ URL: https://code.google.com/p/io-2012-slides
 		</hgroup>
 	</slide>
 
-	{% for slide in slides %}
-	<slide {% if slide.onenter %}slideenter="{{- slide.onenter -}}" {% endif %} {% if slide.onleave %}slideleave="{{- slide.onleave -}}" {% endif %} {% if slide.class %}class="{{- slide.class -}}" {% endif %} {% if slide.image %}style="background-image: url({{- slide.image -}})" {% endif %}>
-		{% if 'segue' in slide.class %}
+	
+	<slide   class="image"  >
+		
+		<hgroup>
+			<h2>And So It Begins</h2>
+
+			<h3>First!</h3>
+		</hgroup>
+		<article ><p><img alt="First patch committed" src="/images/wcdfw2015/first-commit.png" /></p>
+<pre class="prettyprint" data-lang="php">
+'document' => array( ..., 'pages', 'pdf', 'rtf', <b>'wp',  'wpd'</b> ),
+'code'     => array( 'css', 'htm',  'html', 'php',  'js' ),
+<b>
+// wordperfect formats
+'wp|wpd' => 'application/wordperfect',
+</b>
+</pre></article>
+		
+	</slide>
+	
+	<slide   class="big"  >
+		
+		<hgroup>
+			<h2>Why Bother?</h2>
+
+			<h3></h3>
+		</hgroup>
+		<article ><ul class="build">
+<li>Problem Solving</li>
+<li>Community Building</li>
+<li>Personal Growth-ing</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide   class="big"  >
+		
+		<hgroup>
+			<h2>Problem Solving</h2>
+
+			<h3>For fun and profit</h3>
+		</hgroup>
+		<article ><ul class="build">
+<li>For yourself</li>
+<li>For someone else</li>
+<li>For the world</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2>Community Building</h2>
+
+			<h3>It's a small world, after all</h3>
+		</hgroup>
+		<article ></article>
+		
+	</slide>
+	
+	<slide   class="segue dark"  >
+		
 		<aside class="gdbar"><img src="/images/wordpress-logo-notext-rgb.png"></aside>
 		<hgroup class="auto-fadein">
-			<h2>{{- slide.title -}}</h2>
+			<h2>Ways to Contribute</h2>
 
-			<h3>{{- slide.subtitle -}}</h3>
+			<h3>Where there's a will, there's a way</h3>
 		</hgroup>
-		{% else %}
-		<hgroup>
-			<h2>{{- slide.title -}}</h2>
-
-			<h3>{{- slide.subtitle -}}</h3>
-		</hgroup>
-		<article {% if slide.content_class %}class="{{- slide.content_class -}}" {% endif %}>
-			{{- slide.content -}}
-		</article>
-		{% endif %}
+		
 	</slide>
-	{% endfor %}
+	
+	<slide   class="big"  >
+		
+		<hgroup>
+			<h2>Ways to Contribute</h2>
+
+			<h3></h3>
+		</hgroup>
+		<article ><ul class="build">
+<li>Core</li>
+<li>Documentation</li>
+<li>Polyglots</li>
+<li>TV</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2>Ways to Contribute</h2>
+
+			<h3>Core</h3>
+		</hgroup>
+		<article ><ul>
+<li>Reporting bugs</li>
+<li>Suggesting enhancements</li>
+<li>Testing patches</li>
+<li>Writing unit tests</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2>Ways to Contribute</h2>
+
+			<h3>Documentation</h3>
+		</hgroup>
+		<article ><ul>
+<li>Inline docs in Core</li>
+<li>Codex</li>
+<li>DevHub Code Reference</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2>Ways to Contribute</h2>
+
+			<h3>Polyglots</h3>
+		</hgroup>
+		<article ><ul>
+<li>Non-english downloads surpassed english in 2014</li>
+<li>Translation packs for themes and plugins</li>
+<li>Codex</li>
+<li>Video captions</li>
+</ul>
+<footer class="source">
+1. http://ma.tt/2014/10/sotw-2014/
+2. https://make.wordpress.org/plugins/2015/09/01/plugin-translations-on-wordpress-org/
+</footer></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2>Ways to Contribute</h2>
+
+			<h3>TV</h3>
+		</hgroup>
+		<article ><ul>
+<li>WordPress.tv talks and screencasts</li>
+<li>Moderators</li>
+<li>Captioning</li>
+</ul></article>
+		
+	</slide>
+	
+	<slide slideenter="makeWP.alpha()"  slideleave="makeWP.omega()"  class="inner-title-slide"  >
+		
+		<hgroup>
+			<h2>Make WordPress <span class="make-wp">Core</span></h2>
+
+			<h3>Together</h3>
+		</hgroup>
+		<article ><p><q>WordPress is more than software, it's the people.</q></p>
+<footer class="source">Me, just now</footer></article>
+		
+	</slide>
+	
+	<slide    >
+		
+		<hgroup>
+			<h2></h2>
+
+			<h3></h3>
+		</hgroup>
+		<article ></article>
+		
+	</slide>
+	
 
 	<slide class="thank-you-slide segue nobackground">
 		<aside class="gdbar right"><img src="/images/10up-logo-black.svg"></aside>
 		<article class="flexbox vleft auto-fadein">
-			<h2>Change the World</h2>
-			<h3>Contribute to WordPress</h3>
+			<h2>That&rsquo;s all folks!</h2>
 			<p>http://wcdfw2015.morganestes.me</p>
 		</article>
 		<p class="auto-fadein" data-config-contact>

@@ -6,7 +6,7 @@ import jinja2
 import markdown
 
 def process_slides():
-  with codecs.open('../../presentation-output.html', 'w', encoding='utf8') as outfile:
+  with codecs.open('../../index.html', 'w', encoding='utf8') as outfile:
     md = codecs.open('slides.md', encoding='utf8').read()
     md_slides = md.split('\n---\n')
     print 'Compiled %s slides.' % len(md_slides)
@@ -24,7 +24,10 @@ def process_slides():
       remainder_index = metadata and 1 or 0
       # Get the content from the rest of the slide.
       content_section = '\n\n'.join(sections[remainder_index:])
-      html = markdown.markdown(content_section)
+      html = markdown.markdown(content_section, [
+      'markdown.extensions.extra',
+      'markdown.extensions.attr_list'
+      ])
       slide['content'] = postprocess_html(html, metadata)
 
       slides.append(slide)
